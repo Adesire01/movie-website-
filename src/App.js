@@ -17,7 +17,7 @@ const SAMPLE_MOVIES = {
   trending: [
     {
       id: 1,
-      title: "The Dark Knight",
+      title: "The Lost Knight",
       image: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=400",
       backdrop: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=1920",
       description: "Batman faces the Joker.",
@@ -545,66 +545,59 @@ useEffect(() => {
   box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 @media (max-width: 768px) {
-  .details-layout {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .details-poster {
-    order: -1;
-  }
-
-  .details-poster img {
-    margin: 0 auto;
-  }
-
-  .details-actions {
-    justify-content: center;
-  }
-}
-
-/* ===== Mobile (tablets & phones) ===== */
-@media (max-width: 768px) {
   .header {
-    padding: 1rem 1.2rem;
+    padding: 0.8rem 1rem;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    gap: 0.4rem;
+  }
+
+  .logo svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .search-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
   }
 
   .search-input {
-    width: 140px;
-  }
-
-  .hero {
-    height: auto;
-    padding: 2rem 1rem;
-  }
-
-  .hero-title {
-    font-size: 2.2rem;
-  }
-
-  .movie-grid {
-    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 220px;
+    font-size: 0.85rem;
+    padding: 0.45rem 0.6rem;
   }
 
   .hamburger {
     display: block;
+    color: #fff;
+    font-size: 28px;
+    justify-self: end;
+    z-index: 400;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
   }
 }
 
-/* ===== Small phones ===== */
-@media (max-width: 480px) {
-  .movie-grid {
-    grid-template-columns: 1fr;
-  }
+  
 
-  .hero-title {
-    font-size: 1.8rem;
-  }
 
-  .search-input {
-    width: 120px;
-  }
-}
       `}</style>
       
 
