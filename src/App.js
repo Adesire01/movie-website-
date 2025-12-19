@@ -596,48 +596,53 @@ useEffect(() => {
     overflow-x: hidden;
   }
 
+   /* DETAILS LAYOUT */
   .details-layout {
     display: grid;
-    grid-template-columns: 90px 1fr;
-    gap: 0.8rem;
+    grid-template-columns: 120px 1fr; /* image | text */
+    gap: 1.2rem;
     align-items: flex-start;
-    max-width: 100%;
   }
 
-  
-  .details-content {
-    max-width: 100%;   
-    width: 100%;
+  /* POSTER */
+  .details-poster {
+    margin-left: 8px; /* push image slightly right */
   }
 
   .details-poster img {
-    width: 90px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* CONTENT */
+  .details-content {
+    max-width: 100%;
   }
 
   .details-title {
-    font-size: 1.2rem;
-    line-height: 1.3;
+    font-size: 1.5rem;
+    line-height: 1.2;
   }
 
   .details-description {
-    font-size: 0.85rem;
-    line-height: 1.4;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
   }
 
+  /* BUTTONS UNDER EVERYTHING */
   .details-actions {
-    gap: 0.4rem;
-    flex-wrap: wrap;
+    grid-column: 1 / -1;   /* span full width */
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 1.2rem;
   }
 
-  .btn {
-    font-size: 0.8rem;
-    padding: 0.45rem 0.8rem;
+  .details-actions .btn {
+    width: 100%;
+    justify-content: center;
   }
-
-
 }
 
   
