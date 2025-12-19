@@ -715,14 +715,17 @@ useEffect(() => {
     <div className="details-layout">
       
       {/* LEFT CONTENT */}
-      <div className="details-content">
-        <h1 className="details-title">{selectedMovie.title}</h1>
+     <div className="details-content">
+  <h1 className="details-title">{selectedMovie.title}</h1>
+  <p className="details-description">{selectedMovie.description}</p>
+</div>
 
-        <p className="details-description">
-          {selectedMovie.description}
-        </p>
+<div className="details-poster">
+  <img src={selectedMovie.image} alt={selectedMovie.title} />
+</div>
 
-        <div className="details-actions">
+{/* ✅ MOVE ACTIONS HERE */}
+<div className="details-actions">
   <button
     className="btn primary"
     onClick={() => {
@@ -730,7 +733,7 @@ useEffect(() => {
       setPage('player');
     }}
   >
-    ▶ Watch Movie
+    ▶️ Watch Movie
   </button>
 
   <button
@@ -747,7 +750,6 @@ useEffect(() => {
     🔄 Restart
   </button>
 </div>
-      </div>
 
       {/* RIGHT IMAGE */}
       <div className="details-poster">
