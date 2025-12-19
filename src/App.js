@@ -17,7 +17,7 @@ const SAMPLE_MOVIES = {
   trending: [
     {
       id: 1,
-      title: "The Lost Knight",
+      title: "The dark Knight",
       image: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=400",
       backdrop: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?w=1920",
       description: "Batman faces the Joker.",
@@ -222,10 +222,7 @@ useEffect(() => {
           color: #e50914;
         }
 
-        .nav {
-          display: none;
-          gap: 2rem;
-        }
+        
       
         .nav {
           position: fixed;
@@ -593,6 +590,54 @@ useEffect(() => {
   .nav.open {
     display: flex;
   }
+   
+  .details-page {
+    padding: 100px 1rem 2rem;
+    overflow-x: hidden;
+  }
+
+  .details-layout {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 0.8rem;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  
+  .details-content {
+    max-width: 100%;   
+    width: 100%;
+  }
+
+  .details-poster img {
+    width: 90px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .details-title {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .details-description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .details-actions {
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+
 }
 
   
