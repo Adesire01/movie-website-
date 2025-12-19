@@ -760,13 +760,6 @@ useEffect(() => {
   </button>
 </div>
 
-      {/* RIGHT IMAGE */}
-      <div className="details-poster">
-        <img
-          src={selectedMovie.image}
-          alt={selectedMovie.title}
-        />
-      </div>
 
     </div>
   </section>
