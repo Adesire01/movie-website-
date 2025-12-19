@@ -190,7 +190,7 @@ useEffect(() => {
         }
         
         .back-btn {
-          position: fixed;
+          position: absolute;
           top: 90px;
           left: 20px;
           z-index: 1000;
@@ -606,7 +606,7 @@ useEffect(() => {
 
   /* POSTER */
   .details-poster {
-    margin-left: 8px; /* push image slightly right */
+    display: none;
   }
 
   .details-poster img {
@@ -643,6 +643,15 @@ useEffect(() => {
     width: 100%;
     justify-content: center;
   }
+    
+  .back-btn {
+    position: fixed;
+    top: 70px;
+    left: 12px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
 }
 
   
