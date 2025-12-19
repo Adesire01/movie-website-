@@ -599,14 +599,14 @@ useEffect(() => {
    /* DETAILS LAYOUT */
   .details-layout {
     display: grid;
-    grid-template-columns: 120px 1fr; /* image | text */
-    gap: 1.2rem;
+    grid-template-columns: 120px 1fr; 
+    gap: 3rem;
     align-items: flex-start;
   }
 
   /* POSTER */
   .details-poster {
-    display: none;
+    display: block;
   }
 
   .details-poster img {
@@ -632,7 +632,6 @@ useEffect(() => {
 
   /* BUTTONS UNDER EVERYTHING */
   .details-actions {
-    grid-column: 1 / -1;   /* span full width */
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -732,6 +731,7 @@ useEffect(() => {
 <div className="details-poster">
   <img src={selectedMovie.image} alt={selectedMovie.title} />
 </div>
+</div>
 
 {/* ✅ MOVE ACTIONS HERE */}
 <div className="details-actions">
@@ -761,7 +761,7 @@ useEffect(() => {
 </div>
 
 
-    </div>
+    
   </section>
 )}
 
