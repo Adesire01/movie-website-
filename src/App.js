@@ -394,8 +394,22 @@ useEffect(() => {
 .movie-row {
   display: flex;
   gap: 1rem;
-  overflow-x: hidden;
+
+  overflow-x: auto;      
   overflow-y: hidden;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; 
+  
+  .movie-row::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-row {
+  scrollbar-width: none; /* Firefox */
+}
+
+  padding-bottom: 0.5rem;
 }
 
 .scroll-btn {
@@ -428,14 +442,15 @@ useEffect(() => {
 }
 
 .row-movie-card {
-  min-width: 160px;   /* same width for all */
+  min-width: 160px;   
   max-width: 160px;
+  flex-shrink: 0;
 }
 
 .row-movie-card img {
   width: 160px;
-  height: 240px;      /* same height for all */
-  object-fit: cover; /* crops image properly */
+  height: 240px;      
+  object-fit: cover; 
   border-radius: 8px;
 }
 
