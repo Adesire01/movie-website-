@@ -665,6 +665,9 @@ useEffect(() => {
     font-size: 14px;
     padding: 8px 12px;
   }
+    .video-player {
+    height: 45vh;
+    }
 
 }
 
