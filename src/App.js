@@ -209,7 +209,6 @@ useEffect(() => {
           position: fixed;
           top: 0;
           width: 100%;
-          padding: 1.5rem 4%;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -264,13 +263,16 @@ useEffect(() => {
       
 
         .logo {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          font-size: 1.8rem;
-          font-weight: 700;
-          color: #e50914;
-        }
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+}
 
         
       
@@ -624,7 +626,9 @@ useEffect(() => {
     width: 24px;
     height: 24px;
   }
-
+  .logo img {
+    height: 36px;
+  }
   .search-box {
     display: flex;
     justify-content: center;
@@ -738,8 +742,8 @@ useEffect(() => {
         />
       )}
   <div className="logo" onClick={() => setSelectedCategory('home')}>
-    <Film size={32} />
-    MovieMax
+    <img src="/Moviemax-logo.png.png" alt="MovieMax logo" className="moviemax-logo"/>
+    
   </div>
 
   <nav className={`nav ${menuOpen ? 'open' : ''}`}>
