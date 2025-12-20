@@ -266,10 +266,12 @@ useEffect(() => {
   display: flex;
   align-items: center;
   cursor: pointer;
+  height: 100%;
 }
 
 .logo img {
-  height: 90px;
+  height: 100px;
+  max-height: 100%;
   width: auto;
   object-fit: contain;
 }
@@ -610,8 +612,9 @@ useEffect(() => {
 }
 @media (max-width: 768px) {
   .header {
-    padding: 0.8rem 1rem;
+    padding: 0 1rem;
     display: grid;
+    height: 60px;
     grid-template-columns: max-content 1fr max-content;
     align-items: center;
     gap: 0.8rem;
@@ -627,7 +630,7 @@ useEffect(() => {
     height: 24px;
   }
   .logo img {
-    height: 36px;
+    height: 42px;
   }
   .search-box {
     display: flex;
