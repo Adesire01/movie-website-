@@ -58,13 +58,33 @@ const SAMPLE_MOVIES = {
    {
     id: 10,
     title: "Sintel",
-    image: "https://image.tmdb.org/t/p/w500/5N20rQURev5CNDcMjHVUZhpoCNC.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Sintel_poster.jpg/640px-Sintel_poster.jpg",
     backdrop: "https://image.tmdb.org/t/p/w1280/xJHokMbljvjADYdit5fK5VQsXEG.jpg",
     description: "A young girl embarks on a dangerous quest to find her dragon.",
     videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
     trailerUrl: "https://www.youtube.com/embed/eRsGyueVLvQ"
-   }
+   },
+   {
+   id: 11,
+    title: "Big Buck Bunny",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg",
+    backdrop: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg",
+    description: "A comedy about a fat rabbit taking revenge on three irritating rodents.",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    trailerUrl: "https://www.youtube.com/embed/5xAgp6i9lUQ?"
+   },
+
+   {
+    id: 12,
+     title: "Elephant Dream",
+     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Elephants_Dream_cover.jpg/640px-Elephants_Dream_cover.jpg",
+     backdrop: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Elephants_Dream_cover.jpg/640px-Elephants_Dream_cover.jpg",
+     description:"Elephants Dream is a short film about two people who have different visions of the surreal world in which they live.",
+     videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+     trailerUrl: "https://www.youtube.com/embed/kPdv44HtEoA?si=YOwEiOXVLpeOfHRr"
+    }
   ],
+  
 
   action: [
     {
@@ -79,7 +99,27 @@ const SAMPLE_MOVIES = {
       title: "John Wick",
       image: "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg",
       backdrop: "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg"
-    }
+    },
+
+  {
+    id: 12,
+    title: "Tears of steel",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Tos-poster.png/640px-Tos-poster.png",
+    backdrop:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Tos-poster.png/640px-Tos-poster.png", 
+    description: "Synopsis In an apocalyptic future, a group of soldiers and scientists takes refuge in Amsterdam to try to stop an army of robots that threatens the planet.",
+    videoUrl: "",
+    trailerUrl:""
+  },
+
+  {
+    id: 12, 
+    title: "Cosmos Laoundromat",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Cosmos_Laundromat_Victor_Poster.jpg/640px-Cosmos_Laundromat_Victor_Poster.jpg",
+    backdrop:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/CosmosLaundromatPoster.jpg/640px-CosmosLaundromatPoster.jpg",
+    description: "On a desolate island, suicidal sheep Franck meets his fate in a quirky salesman, who offers him the gift of a lifetime.",
+    videoUrl: "",
+    trailerUrl:"https://www.youtube.com/embed/u8Y6S6ev-Vg?si=0uyaFGgkTo7FiIrS"
+  }
   ],
 
   scifi: [
