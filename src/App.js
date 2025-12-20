@@ -53,7 +53,17 @@ const SAMPLE_MOVIES = {
         image: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
   backdrop: "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
       description: "Earth’s mightiest heroes."
-    }
+    },
+
+   {
+    id: 10,
+    title: "Sintel",
+    image: "https://image.tmdb.org/t/p/w500/5N20rQURev5CNDcMjHVUZhpoCNC.jpg",
+    backdrop: "https://image.tmdb.org/t/p/w1280/xJHokMbljvjADYdit5fK5VQsXEG.jpg",
+    description: "A young girl embarks on a dangerous quest to find her dragon.",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+    trailerUrl: "https://www.youtube.com/embed/eRsGyueVLvQ"
+   }
   ],
 
   action: [
@@ -801,7 +811,7 @@ useEffect(() => {
         src={selectedMovie.videoUrl}
         className="video-player"
         controls
-        autoPlay
+        playsInline
       />
     ) : (
         <video
